@@ -53,7 +53,8 @@ class DateWidget extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: <Widget>[
-                  Text(new DateFormat("E", locale).format(date).toUpperCase(), style: dayTextStyle!.copyWith(color: Colors.black)),
+                  Text(new DateFormat("E", locale).format(date).toUpperCase(),
+                      style: dayTextStyle!.copyWith(color: Colors.black)),
                   const SizedBox(height: 10),
                   Container(
                     decoration: BoxDecoration(
@@ -63,7 +64,8 @@ class DateWidget extends StatelessWidget {
                     ),
                     height: 40,
                     width: 40,
-                    child: Center(child: Text(date.day.toString(), style: dateTextStyle)),
+                    child: Center(
+                        child: Text(date.day.toString(), style: dateTextStyle)),
                   ),
                 ],
               ),
